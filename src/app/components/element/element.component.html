@@ -1,0 +1,19 @@
+<p>Second element data</p>
+@if (secondElement) {
+<ul>
+  <li>
+    {{ secondElement.title }}
+  </li>
+  <li>
+    {{ secondElement.status }}
+  </li>
+  <li>
+    {{ secondElement.user_id }}
+  </li>
+  <li>
+    {{ secondElement.due_on | date }}
+  </li>
+</ul>
+} @else {
+<p>Element not found</p>
+}
